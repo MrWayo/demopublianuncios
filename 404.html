@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Publianuncios | Error 404</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wayoicons.css">
+    <!-- Important Owl Carousel stylesheet -->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <!-- Default Owl Carousel Theme -->
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/gridbst.css">
+    <link rel="stylesheet" href="img/logopa.png" type="image/x-icon" rel="shortcut icon">
+    <link rel="icon" href="img/logopa.png">
+</head>
+<body>
+	<nav class="nav fijado">
+        <div class="border-b">
+            <ul>
+                <li class="border-r"><a href=""><i class="glyphicon glyphicon-th-large"></i><span> Menú</span></a></li>
+                <li><a href=""><img width="46px;" src="img/logopa.png" alt=""></a></li>
+                <div style="float: right;"><li style="padding-bottom: 17px;" class="log"><a href=""><i class="glyphicon glyphicon-user"></i> <span>Hola, Victor</span></a></li></div>  
+            </ul>
+        </div>
+        <div class="border-b">
+            <ul>
+                <li class="border-r"><a href=""><i class="glyphicon glyphicon-sort-by-attributes"></i></a></li>
+                <li class="border-r"><a href="index.html"><i class="glyphicon glyphicon-home"></i><span> Inicio</span></a></li>
+                <li class="border-r"><a href="anuncia.html"><i class="glyphicon glyphicon-bullhorn"></i><span> Escribe tu anuncio</span></a></li>
+                <li class="border-r"><a href="404.html"><i class="glyphicon glyphicon-fire"></i><span> Anuncios TOP</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="slide-b"></div>
+    <div class="contenido" style="background: #EAE9E8;">
+        <div style="text-align: center;">
+            <h1>ERROR 404</h1>
+            <img style="max-width:100%; height:auto;" src="img/404.gif" alt="funny gif 404 error">
+        </div>
+    </div>
+    <footer class="footer">
+        <ul class="press">
+        <li>Publianuncios &copy;</li>
+        <li><a class="animaline" href="">¿Cómo anunciar?</a></li>
+        <li><a class="animaline" href="">FAQ</a></li>
+        <li><a class="animaline" href="https://www.facebook.com/myfanpage">Fan Page</a></li>
+        </ul>
+    </footer>
+    <div class="contenido">
+        <h4 align="center"><h4 align="center"><i class="glyphicon glyphicon-ok"></i> Lo que estabas buscando <b>ya está aquí</b>, comienza a <a style="color: #2FD8A2;" href="">publicar</a>.</h4></h4>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+    	/*
+    	document.getElementById("uploadBtn").onchange = function () {
+		    document.getElementById("uploadFile").value = this.value;
+		};
+		*/
+		$('#uploadBtn').change (function() {
+
+			//$("#uploadFile").val($(this).val());
+
+			$('#uploadFile').val($(this).val().replace(/([^\\]*\\)*/,''));
+
+		});
+    </script>
+</body>
+</html>
